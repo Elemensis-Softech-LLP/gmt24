@@ -13,7 +13,7 @@ import { FilePath } from '@ionic-native/file-path';
 import { File } from '@ionic-native/file';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
-import {GoogleMaps} from '@ionic-native/google-maps';
+import { GoogleMaps } from '@ionic-native/google-maps';
 import { Geolocation } from '@ionic-native/geolocation';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
 import { CalendarModule } from "ion2-calendar";
@@ -28,13 +28,13 @@ import { GooglePlus } from '@ionic-native/google-plus';
     //HomePage
   ],
   imports: [
-   
-    BrowserModule,HttpModule,
+
+    BrowserModule, HttpModule,
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
     IonicImageViewerModule,
     CalendarModule
-    
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -50,9 +50,9 @@ import { GooglePlus } from '@ionic-native/google-plus';
     Geolocation,
     Facebook,
     GooglePlus,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     UserProvider,
-    
+
     Camera,
     FileTransfer,
     FilePath,
@@ -60,7 +60,7 @@ import { GooglePlus } from '@ionic-native/google-plus';
     LaunchNavigator,
     Push,
     CallNumber
-    
+
   ]
 })
-export class AppModule {} 
+export class AppModule { }
